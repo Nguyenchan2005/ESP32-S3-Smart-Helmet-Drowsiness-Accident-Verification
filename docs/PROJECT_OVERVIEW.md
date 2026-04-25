@@ -22,10 +22,11 @@ Từ nhu cầu đó, đề tài phát triển một mũ bảo hiểm thông minh
 | Minh chứng | Vị trí |
 | --- | --- |
 | Paper accepted | `paper/ACCEPTED_PAPER_SPRINGER_V2.docx` |
-| Top cuộc thi | `awards/README.md` và các file chứng nhận/hình ảnh bổ sung trong `awards/` |
+| Top 20 Bach Khoa Innovation 2025 | `awards/top.jpg` và `awards/README.md` |
+| Hình ảnh hoạt động cuộc thi | `awards/1.jpg`, `awards/present.jpg` |
 | Báo cáo nghiên cứu | `reports/RESEARCH_REPORT_SMART_HELMET.docx` |
 
-Các minh chứng này giúp repo thể hiện rõ dự án có nền tảng nghiên cứu, có sản phẩm nguyên mẫu và có kết quả được công nhận qua hoạt động học thuật/cuộc thi.
+Các minh chứng này giúp repo thể hiện rõ dự án có nền tảng nghiên cứu, có sản phẩm nguyên mẫu và có kết quả được công nhận qua hoạt động học thuật/cuộc thi. Cụ thể, nhóm HIRO với dự án Smart Motorcycle Helmet đạt **Top 20 - University Category** tại **Bach Khoa Innovation 2025**.
 
 ## Phạm Vi Nghiên Cứu
 

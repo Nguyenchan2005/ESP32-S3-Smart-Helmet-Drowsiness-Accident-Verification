@@ -9,8 +9,10 @@
 | Minh chứng | Vị trí | Ý nghĩa |
 | --- | --- | --- |
 | Paper accepted | [`paper/ACCEPTED_PAPER_SPRINGER_V2.docx`](paper/ACCEPTED_PAPER_SPRINGER_V2.docx) | Bản paper được đặt riêng để người đọc nhận biết nghiên cứu đã có đầu ra học thuật. |
-| Top cuộc thi | [`awards/README.md`](awards/README.md) | Khu vực làm nổi bật thành tích/giấy chứng nhận/hình ảnh minh chứng cuộc thi của dự án. |
+| Top 20 Bach Khoa Innovation 2025 | [`awards/README.md`](awards/README.md) | Minh chứng nhóm HIRO đạt Top 20 - University Category với dự án Smart Motorcycle Helmet. |
 | Báo cáo nghiên cứu | [`reports/RESEARCH_REPORT_SMART_HELMET.docx`](reports/RESEARCH_REPORT_SMART_HELMET.docx) | Báo cáo tổng kết đề tài khoa học và công nghệ, dùng làm nguồn nội dung chính. |
+
+![Certificate of Recognition - Top 20 Bach Khoa Innovation 2025](awards/top.jpg)
 
 ## Tổng Quan
 
@@ -69,7 +71,10 @@ Hệ thống được tổ chức theo mô hình IoT gồm ba khối chính:
 ├── assets/
 │   └── images/                       # Hình ảnh trích xuất từ báo cáo
 ├── awards/
-│   └── README.md                     # Minh chứng thành tích/top cuộc thi
+│   ├── README.md                     # Minh chứng thành tích/top cuộc thi
+│   ├── top.jpg                       # Certificate of Recognition - Top 20
+│   ├── 1.jpg                         # Ảnh booth demo
+│   └── present.jpg                   # Ảnh trình bày/đánh giá
 ├── paper/
 │   ├── ACCEPTED_PAPER_SPRINGER_V2.docx
 │   └── README.md                     # Ghi chú paper accepted
@@ -90,7 +95,7 @@ Hệ thống được tổ chức theo mô hình IoT gồm ba khối chính:
 ## Hướng Dẫn Đọc Nhanh
 
 - Xem [`paper/`](paper/) trước nếu cần bằng chứng paper accepted.
-- Xem [`awards/`](awards/) để nắm phần minh chứng top cuộc thi và nơi bổ sung chứng nhận/hình ảnh.
+- Xem [`awards/`](awards/) để nắm minh chứng Top 20 Bach Khoa Innovation 2025 và hình ảnh hoạt động.
 - Bắt đầu với [Project Overview](docs/PROJECT_OVERVIEW.md) để hiểu mục tiêu, bối cảnh và giá trị của đề tài.
 - Đọc [Architecture](docs/ARCHITECTURE.md) để nắm cách các module phần cứng, phần mềm và ứng dụng di động phối hợp.
 - Xem [Implementation](docs/IMPLEMENTATION.md) nếu cần chi tiết về thuật toán phát hiện va chạm, buồn ngủ, SOS và HUD.
