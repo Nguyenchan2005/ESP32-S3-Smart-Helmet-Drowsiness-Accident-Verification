@@ -1,46 +1,78 @@
 # Project Overview
 
-## Tên dự án
-Mũ Bảo Hiểm Thông Minh (Smart Helmet)
+## Tên Dự Án
 
-## Mục tiêu chính
-- Phát triển nguyên mẫu mũ bảo hiểm thông minh dành cho người điều khiển mô tô, xe máy.
-- Tích hợp ba chức năng an toàn chủ động: HUD chỉ đường, giám sát buồn ngủ và phát hiện va chạm cùng cảnh báo SOS.
-- Thiết kế phù hợp điều kiện thực tế tại Việt Nam, ưu tiên gọn nhẹ, tiết kiệm năng lượng và chi phí hợp lý.
+**Mũ bảo hiểm thông minh** - nguyên mẫu thiết bị an toàn chủ động cho người điều khiển mô tô, xe máy.
 
-## Động lực và bối cảnh
-- Tai nạn giao thông do xe máy là nguyên nhân chính gây tử vong tại Việt Nam.
-- Người lái buồn ngủ, mất tập trung hoặc cúi xuống điện thoại khi lái xe là những yếu tố rủi ro lớn.
-- Nghiên cứu cho thấy HUD, cảm biến quán tính và thuật toán giám sát mắt là các giải pháp khả thi để nâng cao an toàn.
+## Bối Cảnh
 
-## Chức năng cốt lõi
-1. Hiển thị thông tin điều hướng trên Head-Up Display (HUD) ngay trong tầm nhìn của người lái.
-2. Giám sát trạng thái buồn ngủ và cảnh báo người dùng kịp thời bằng rung, âm thanh và thông báo di động.
-3. Phát hiện va chạm/ngã xe tự động và kích hoạt quy trình SOS kèm vị trí GPS.
+Người đi mô tô, xe máy là nhóm dễ bị tổn thương trong giao thông vì thiếu lớp bảo vệ vật lý như ô tô. Khi tai nạn xảy ra, thời gian phát hiện và gọi cứu hộ càng ngắn thì khả năng can thiệp trong "thời gian vàng" càng cao. Bên cạnh va chạm, các yếu tố như buồn ngủ, mất tập trung và cúi nhìn điện thoại để xem bản đồ cũng làm tăng rủi ro tai nạn.
 
-## Phạm vi nghiên cứu
-- Tập trung vào nguyên mẫu thử nghiệm cho người điều khiển mô tô, xe máy.
-- Bao gồm thiết kế phần cứng, phần mềm nhúng và giao diện người dùng di động.
-- Chưa hướng đến thương mại hóa ngay, mà nhằm chứng minh tính khả thi và hiệu quả của giải pháp.
+Từ nhu cầu đó, đề tài phát triển một mũ bảo hiểm thông minh có khả năng hỗ trợ người lái trước, trong và sau tình huống nguy hiểm: hiển thị thông tin ngay trong tầm nhìn, cảnh báo buồn ngủ theo thời gian thực và tự động gửi SOS khi phát hiện tai nạn.
 
-## Tổ chức nhóm
-- Chủ nhiệm: Hà Thanh Sang
-- Thành viên: Nguyễn Việt Chân, Đỗ Minh Phúc, Nguyễn Thạch Thành, Nguyễn Minh Quang
-- Giảng viên hướng dẫn: TS. Phạm Công Thiện
+## Mục Tiêu
 
-## Cấu trúc báo cáo
-- Chương 1: Tổng quan nghiên cứu
-- Chương 2: Thiết kế hệ thống
-- Chương 3: Phát hiện va chạm và cảnh báo SOS
-- Chương 4: Giám sát buồn ngủ và cảnh báo đa phương thức
-- Chương 5: Hiển thị thông tin qua HUD
-- Chương 6: Thử nghiệm và đánh giá hệ thống
-- Kết luận và kiến nghị
+- Thiết kế nguyên mẫu mũ bảo hiểm thông minh phù hợp với điều kiện sử dụng tại Việt Nam.
+- Tích hợp ba chức năng trọng tâm: HUD dẫn đường, cảnh báo buồn ngủ và phát hiện tai nạn/SOS.
+- Tối ưu hệ thống theo hướng gọn nhẹ, tiêu thụ năng lượng thấp, chi phí hợp lý và dễ mở rộng.
+- Đánh giá khả năng hoạt động của hệ thống qua mô phỏng, thử nghiệm module và thử nghiệm thực địa quy mô nhỏ.
 
----
+## Phạm Vi Nghiên Cứu
 
-## Hướng dẫn đọc
-- `README.md`: Tổng quan dự án và cấu trúc thư mục.
-- `docs/ARCHITECTURE.md`: Giải thích chi tiết kiến trúc phần cứng và phần mềm.
-- `docs/IMPLEMENTATION.md`: Mô tả quy trình hoạt động, thuật toán cảnh báo và thử nghiệm.
-- `assets/images/`: Chứa các hình ảnh trích xuất từ báo cáo gốc để minh họa thiết kế.
+Đề tài tập trung ở mức nguyên mẫu nghiên cứu, chưa hướng tới thương mại hóa ngay. Phạm vi bao gồm:
+
+- Thiết kế phần cứng lắp trên mũ.
+- Phát triển phần mềm nhúng trên ESP32-S3.
+- Xây dựng logic giao tiếp với ứng dụng di động qua BLE.
+- Thiết kế cơ chế gửi cảnh báo SOS kèm vị trí GPS.
+- Kiểm thử các kịch bản va chạm, buồn ngủ, dẫn đường và trải nghiệm đội mũ.
+
+## Chức Năng Cốt Lõi
+
+### 1. HUD Dẫn Đường
+
+HUD hiển thị chỉ dẫn rẽ, khoảng cách và thông tin tốc độ trong vùng quan sát ngoại biên của người lái. Thiết kế giao diện ưu tiên tối giản để người dùng đọc nhanh mà không bị che khuất tầm nhìn.
+
+![Hình ảnh HUD nguyên mẫu](../assets/images/image8.png)
+
+### 2. Giám Sát Buồn Ngủ
+
+Camera MaixCam theo dõi vùng mắt và phân loại trạng thái mở/nhắm. Khi mắt nhắm liên tục vượt ngưỡng hoặc xuất hiện dấu hiệu gật đầu từ dữ liệu MPU-6050, hệ thống kích hoạt cảnh báo rung, âm thanh, HUD và thông báo điện thoại.
+
+### 3. Phát Hiện Tai Nạn Và SOS
+
+MPU-6050 theo dõi gia tốc tổng hợp và góc nghiêng của mũ. Khi phát hiện biến động bất thường, hệ thống chuyển sang trạng thái nghi ngờ tai nạn, mở cửa sổ xác thực 10-20 giây. Nếu người dùng không phản hồi, ứng dụng gửi SMS chứa vị trí Google Maps cho liên hệ khẩn cấp.
+
+![Minh họa tin nhắn SOS](../assets/images/image9.png)
+
+## Đối Tượng Sử Dụng
+
+- Người đi xe máy, mô tô trong đô thị và ngoại thành.
+- Người thường xuyên di chuyển đường dài, dễ gặp rủi ro mệt mỏi hoặc mất tập trung.
+- Nhóm nghiên cứu, sinh viên và kỹ sư quan tâm đến IoT, embedded system, an toàn giao thông và thiết bị đeo thông minh.
+
+## Nhóm Thực Hiện
+
+| Vai trò | Họ tên |
+| --- | --- |
+| Chủ nhiệm | Hà Thanh Sang |
+| Thành viên | Nguyễn Việt Chân |
+| Thành viên | Đỗ Minh Phúc |
+| Thành viên | Nguyễn Thạch Thành |
+| Thành viên | Nguyễn Minh Quang |
+| Giảng viên hướng dẫn | TS. Phạm Công Thiện |
+
+## Cấu Trúc Báo Cáo Gốc
+
+Nội dung báo cáo gốc được tổ chức theo sáu chương:
+
+1. Tổng quan nghiên cứu.
+2. Thiết kế hệ thống.
+3. Phát hiện va chạm và gửi cảnh báo SOS.
+4. Giám sát tình trạng người lái và cảnh báo buồn ngủ.
+5. Hiển thị thông tin qua Head-Up Display.
+6. Thử nghiệm và đánh giá hệ thống.
+
+## Giá Trị Của Dự Án
+
+Dự án thể hiện một hướng tiếp cận tích hợp: thay vì chỉ thêm một cảm biến cảnh báo đơn lẻ, hệ thống phối hợp dữ liệu từ chuyển động, hình ảnh, định vị và giao diện hiển thị để tạo thành một nền tảng an toàn hoàn chỉnh. Đây là cơ sở tốt để tiếp tục phát triển thành sản phẩm có tính ứng dụng cao hơn trong hệ sinh thái giao thông thông minh.
