@@ -17,6 +17,16 @@ Từ nhu cầu đó, đề tài phát triển một mũ bảo hiểm thông minh
 - Tối ưu hệ thống theo hướng gọn nhẹ, tiêu thụ năng lượng thấp, chi phí hợp lý và dễ mở rộng.
 - Đánh giá khả năng hoạt động của hệ thống qua mô phỏng, thử nghiệm module và thử nghiệm thực địa quy mô nhỏ.
 
+## Minh Chứng Nổi Bật
+
+| Minh chứng | Vị trí |
+| --- | --- |
+| Paper accepted | `paper/ACCEPTED_PAPER_SPRINGER_V2.docx` |
+| Top cuộc thi | `awards/README.md` và các file chứng nhận/hình ảnh bổ sung trong `awards/` |
+| Báo cáo nghiên cứu | `reports/RESEARCH_REPORT_SMART_HELMET.docx` |
+
+Các minh chứng này giúp repo thể hiện rõ dự án có nền tảng nghiên cứu, có sản phẩm nguyên mẫu và có kết quả được công nhận qua hoạt động học thuật/cuộc thi.
+
 ## Phạm Vi Nghiên Cứu
 
 Đề tài tập trung ở mức nguyên mẫu nghiên cứu, chưa hướng tới thương mại hóa ngay. Phạm vi bao gồm:

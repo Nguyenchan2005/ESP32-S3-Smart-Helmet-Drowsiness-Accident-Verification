@@ -4,6 +4,14 @@
 
 ![Nguyên mẫu phần cứng](assets/images/image7.png)
 
+## Research & Achievements
+
+| Minh chứng | Vị trí | Ý nghĩa |
+| --- | --- | --- |
+| Paper accepted | [`paper/ACCEPTED_PAPER_SPRINGER_V2.docx`](paper/ACCEPTED_PAPER_SPRINGER_V2.docx) | Bản paper được đặt riêng để người đọc nhận biết nghiên cứu đã có đầu ra học thuật. |
+| Top cuộc thi | [`awards/README.md`](awards/README.md) | Khu vực làm nổi bật thành tích/giấy chứng nhận/hình ảnh minh chứng cuộc thi của dự án. |
+| Báo cáo nghiên cứu | [`reports/RESEARCH_REPORT_SMART_HELMET.docx`](reports/RESEARCH_REPORT_SMART_HELMET.docx) | Báo cáo tổng kết đề tài khoa học và công nghệ, dùng làm nguồn nội dung chính. |
+
 ## Tổng Quan
 
 **ESP32-S3 Smart Helmet** là nguyên mẫu mũ bảo hiểm thông minh dành cho người đi mô tô, xe máy. Dự án hướng đến bài toán an toàn giao thông tại Việt Nam, nơi người lái xe hai bánh dễ gặp rủi ro do va chạm, mất tập trung khi xem bản đồ hoặc buồn ngủ trong quá trình di chuyển.
@@ -58,21 +66,31 @@ Hệ thống được tổ chức theo mô hình IoT gồm ba khối chính:
 ```text
 .
 ├── README.md                         # Tài liệu tổng quan dự án
-├── MH05_SmartHelmet1.docx            # Báo cáo gốc đọc được, dùng làm nguồn chính
-├── Springer-v2.docx                  # Bản DOCX gốc bị lỗi cấu trúc ZIP/DOCX
-├── Springer-v2-recover.docx          # Bản phục hồi đi kèm
-├── Springer-v2-repaired.zip          # Gói phục hồi đi kèm
 ├── assets/
 │   └── images/                       # Hình ảnh trích xuất từ báo cáo
-└── docs/
-    ├── PROJECT_OVERVIEW.md           # Bối cảnh, mục tiêu, phạm vi và nhóm thực hiện
-    ├── ARCHITECTURE.md               # Kiến trúc phần cứng, phần mềm và luồng dữ liệu
-    ├── IMPLEMENTATION.md             # Thuật toán, quy trình vận hành và thử nghiệm
-    └── RECOVERY_NOTE.md              # Ghi chú về tình trạng các file Word gốc
+├── awards/
+│   └── README.md                     # Minh chứng thành tích/top cuộc thi
+├── paper/
+│   ├── ACCEPTED_PAPER_SPRINGER_V2.docx
+│   └── README.md                     # Ghi chú paper accepted
+├── reports/
+│   ├── RESEARCH_REPORT_SMART_HELMET.docx
+│   └── README.md                     # Báo cáo nghiên cứu gốc
+├── docs/
+│   ├── PROJECT_OVERVIEW.md           # Bối cảnh, mục tiêu, phạm vi và nhóm thực hiện
+│   ├── ARCHITECTURE.md               # Kiến trúc phần cứng, phần mềm và luồng dữ liệu
+│   ├── IMPLEMENTATION.md             # Thuật toán, quy trình vận hành và thử nghiệm
+│   └── RECOVERY_NOTE.md              # Ghi chú về tình trạng các file Word gốc
+└── archive/
+    ├── Springer-v2-recover.docx      # Bản phục hồi paper, giữ để đối chiếu
+    ├── Springer-v2-repaired.zip      # Gói phục hồi đi kèm
+    └── README.md
 ```
 
 ## Hướng Dẫn Đọc Nhanh
 
+- Xem [`paper/`](paper/) trước nếu cần bằng chứng paper accepted.
+- Xem [`awards/`](awards/) để nắm phần minh chứng top cuộc thi và nơi bổ sung chứng nhận/hình ảnh.
 - Bắt đầu với [Project Overview](docs/PROJECT_OVERVIEW.md) để hiểu mục tiêu, bối cảnh và giá trị của đề tài.
 - Đọc [Architecture](docs/ARCHITECTURE.md) để nắm cách các module phần cứng, phần mềm và ứng dụng di động phối hợp.
 - Xem [Implementation](docs/IMPLEMENTATION.md) nếu cần chi tiết về thuật toán phát hiện va chạm, buồn ngủ, SOS và HUD.
@@ -99,4 +117,4 @@ Hệ thống được tổ chức theo mô hình IoT gồm ba khối chính:
 
 ## Ghi Chú
 
-Tài liệu trong repository được biên soạn lại từ nội dung có thể trích xuất của `MH05_SmartHelmet1.docx` và các hình ảnh trong `assets/images/`. File `Springer-v2.docx` hiện bị lỗi cấu trúc ZIP/DOCX nên không được dùng làm nguồn chính cho bản tài liệu này.
+Tài liệu trong repository được biên soạn lại từ nội dung có thể trích xuất của `reports/RESEARCH_REPORT_SMART_HELMET.docx` và các hình ảnh trong `assets/images/`. Bản paper accepted được đặt riêng tại `paper/` để làm rõ đầu ra học thuật của nghiên cứu.
