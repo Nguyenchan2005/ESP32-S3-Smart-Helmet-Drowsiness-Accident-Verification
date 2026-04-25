@@ -100,7 +100,7 @@ Hệ thống được tổ chức theo mô hình IoT gồm ba khối chính:
 
 | Vai trò | Họ tên |
 | --- | --- |
-| Chủ nhiệm | Hà Thanh Sang |
+| Thành viên | Hà Thanh Sang |
 | Thành viên | Nguyễn Việt Chân |
 | Thành viên | Đỗ Minh Phúc |
 | Thành viên | Nguyễn Thạch Thành |
